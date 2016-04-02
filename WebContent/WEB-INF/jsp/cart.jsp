@@ -17,7 +17,7 @@
 <div class="container header">
 	<div class="span5">
 		<div class="logo">
-			<a href="http://localhost:8080/mango/">
+			<a href="#">
 				<img src="${pageContext.request.contextPath}/image/r___________renleipic_01/dyl.png" alt="dyl">
 			</a>
 		</div>
@@ -140,7 +140,7 @@
 		</ul>
 	</div>
 	<div class="span24">
-		<div class="copyright">Copyright © 2005-2015 网上商城 版权所有</div>
+		<div class="copyright">Copyright © 2005-2016 网上商城 版权所有 qq:1095758325</div>
 	</div>
 </div>
 </body></html>

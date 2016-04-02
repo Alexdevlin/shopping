@@ -329,7 +329,7 @@
 			</ul>
 		</div>
 		<div class="span24">
-			<div class="copyright">Copyright © 2005-2015 网上商城 版权所有</div>
+		<div class="copyright">Copyright © 2005-2016 网上商城 版权所有 qq:1095758325</div>
 		</div>
 	</div>
 	<div id="_my97DP"

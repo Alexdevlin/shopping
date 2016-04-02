@@ -26,7 +26,7 @@
 	</div>
 	<div class="span9">
 <div class="headerAd">
-					<img src="image\r___________renleipic_01/header.jpg" alt="正品保障" title="正品保障" height="50" width="320">
+	<img src="${pageContext.request.contextPath}/image/header.jpg" width="320" height="50" alt="正品保障" title="正品保障"/>
 </div>	</div>
 	
 	<%@ include file="menu.jsp" %>
@@ -172,7 +172,7 @@
 		</ul>
 	</div>
 	<div class="span24">
-		<div class="copyright">Copyright © 2005-2015 网上商城 版权所有</div>
+		<div class="copyright">Copyright © 2005-2016 网上商城 版权所有 qq:1095758325</div>
 	</div>
 </div>
 </body>

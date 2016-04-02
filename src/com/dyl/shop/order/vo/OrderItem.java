@@ -3,9 +3,10 @@ package com.dyl.shop.order.vo;
 import com.dyl.shop.product.vo.Product;
 
 /**
- * 订单项的实体
  * 
- *
+ * @Description: 订单项的实体
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:06:41
  */
 public class OrderItem {
 	private Integer itemid;

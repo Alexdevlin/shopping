@@ -11,6 +11,12 @@ import com.dyl.shop.product.dao.ProductDao;
 import com.dyl.shop.product.vo.Product;
 import com.dyl.shop.utils.PageBean;
 
+/**
+ * 
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:07:55
+ */
 @Service
 @Transactional
 public class ProductService {

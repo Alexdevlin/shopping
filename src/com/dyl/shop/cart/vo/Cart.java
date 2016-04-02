@@ -6,9 +6,10 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * 购物车对象
  * 
- * 
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午12:58:56
  */
 public class Cart implements Serializable{
 	// 购物车属性

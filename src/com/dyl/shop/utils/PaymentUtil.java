@@ -5,6 +5,12 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
+/**
+ * 
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:10:16
+ */
 public class PaymentUtil {
 
 	private static String encodingCharset = "UTF-8";

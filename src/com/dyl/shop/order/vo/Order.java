@@ -7,21 +7,10 @@ import java.util.Set;
 import com.dyl.shop.user.vo.User;
 
 /**
- * 订单实体
  * 
- *CREATE TABLE `orders` (
-  `oid` int(11) NOT NULL AUTO_INCREMENT,
-  `total` double DEFAULT NULL,
-  `ordertime` datetime DEFAULT NULL,
-  `state` int(11) DEFAULT NULL,
-  `name` varchar(20) DEFAULT NULL,
-  `phone` varchar(20) DEFAULT NULL,
-  `addr` varchar(50) DEFAULT NULL,
-  `uid` int(11) DEFAULT NULL,
-  PRIMARY KEY (`oid`),
-  KEY `FKC3DF62E5AA3D9C7` (`uid`),
-  CONSTRAINT `FKC3DF62E5AA3D9C7` FOREIGN KEY (`uid`) REFERENCES `user` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:07:02
  */
 public class Order {
 	private Integer oid;

@@ -7,10 +7,12 @@ import java.util.Set;
 import com.dyl.shop.categorysecond.vo.CategorySecond;
 
 
+
 /**
- * 一级分类的实体类对象
- * @author 传智.郭嘉
- *
+ * 
+ * @Description: 一级分类的实体类对象
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:01:39
  */
 public class Category  implements java.io.Serializable{
 	private Integer cid;

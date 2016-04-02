@@ -13,71 +13,76 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
+/**
+ * 
+ * @Description:
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:00:51
+ */
 @Controller
 @Scope("prototype")
-public class AdminCategoryAction extends ActionSupport implements
-		ModelDriven<Category> {
-	private Category category = new Category();
+public class AdminCategoryAction extends ActionSupport implements ModelDriven<Category> {
+  private Category category = new Category();
 
-	@Resource
-	private CategoryService categoryService;
+  @Resource
+  private CategoryService categoryService;
 
-	@Override
-	public Category getModel() {
-		// TODO Auto-generated method stub
-		return category;
-	}
+  @Override
+  public Category getModel() {
+    // TODO Auto-generated method stub
+    return category;
+  }
 
-	// 查询一级分类
-	public String findAll() {
+  // 查询一级分类
+  public String findAll() {
 
-		List<Category> clist = categoryService.findAll();
+    List<Category> clist = categoryService.findAll();
 
-		ActionContext.getContext().getValueStack().set("cList", clist);
+    ActionContext.getContext().getValueStack().set("cList", clist);
 
-		return "findAll";
+    return "findAll";
 
-	}
+  }
 
-	// 添加一级分类
+  // 添加一级分类
 
-	public String save() {
+  public String save() {
 
-		categoryService.save(category);
+    categoryService.save(category);
 
-		return "save";
+    return "save";
 
-	}
+  }
 
-	// 删除一级分类
+  // 删除一级分类
 
-	public String delete() {
+  public String delete() {
 
-		category = categoryService.findByCid(category.getCid());
-		
-		categoryService.delete(category);
+    category = categoryService.findByCid(category.getCid());
 
-		return "deleteSuccess";
+    categoryService.delete(category);
 
-	}
-	//修改一级分类进行跳转到更新action的jsp
-	public String edit(){
-		
-		//查询一级分类
-		category =categoryService.findByCid(category.getCid());
-		
-		return "editSuccess";
-		
-		
-	}
-	//更新一级分类
-	
-	public String update(){
-		
-		categoryService.update(category);
-		
-		return "updateSuccess";
-		
-	}
-	
+    return "deleteSuccess";
+
+  }
+
+  // 修改一级分类进行跳转到更新action的jsp
+  public String edit() {
+
+    // 查询一级分类
+    category = categoryService.findByCid(category.getCid());
+
+    return "editSuccess";
+
+  }
+  // 更新一级分类
+
+  public String update() {
+
+    categoryService.update(category);
+
+    return "updateSuccess";
+
+  }
+
 }

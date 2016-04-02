@@ -14,37 +14,39 @@ import com.dyl.shop.product.vo.Product;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
-
+/**
+ * 
+ * @Description:
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:04:25
+ */
 @Controller
 @Scope("prototype")
-public class IndexAction extends ActionSupport{
-	
-	//注入一级分类的service
-	@Resource
-	private CategoryService categoryService;
-	
-	//注入商品的service
-	
-	@Resource
-	private ProductService productService;
-	
-	
-	public String execute(){
-		//查询一级分类并存入到session中
-		List<Category> cList=	categoryService.findAll();
-		ActionContext.getContext().getSession().put("cList", cList);
-				
-		//查询热门商品，并存值栈中
-		List<Product> hList=productService.findHot();
-		ActionContext.getContext().getValueStack().set("hList", hList);
-		
-		//查询最新的商品并存值栈中
-		List<Product> nList=productService.findNew();
-		ActionContext.getContext().getValueStack().set("nList", nList);
-		return "index";
-		
-	}
-	
-	
+public class IndexAction extends ActionSupport {
+
+  // 注入一级分类的service
+  @Resource
+  private CategoryService categoryService;
+
+  // 注入商品的service
+
+  @Resource
+  private ProductService productService;
+
+  public String execute() {
+    // 查询一级分类并存入到session中
+    List<Category> cList = categoryService.findAll();
+    ActionContext.getContext().getSession().put("cList", cList);
+
+    // 查询热门商品，并存值栈中
+    List<Product> hList = productService.findHot();
+    ActionContext.getContext().getValueStack().set("hList", hList);
+
+    // 查询最新的商品并存值栈中
+    List<Product> nList = productService.findNew();
+    ActionContext.getContext().getValueStack().set("nList", nList);
+    return "index";
+
+  }
 
 }

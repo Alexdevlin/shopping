@@ -15,10 +15,11 @@
 		<property name="cname" />
 
 		<!-- 配置二级分类的集合 -->
-		 <set order-by="csid" name="categorySeconds" cascade="delete" lazy="false">
-		  <key column="cid"/> 
-			<one-to-many class="com.dyl.shop.categorysecond.vo.CategorySecond"/> </set>
-		
+		<set order-by="csid" name="categorySeconds" cascade="delete" lazy="false">
+			<key column="cid" />
+			<one-to-many class="com.dyl.shop.categorysecond.vo.CategorySecond" />
+		</set>
+
 
 	</class>
 

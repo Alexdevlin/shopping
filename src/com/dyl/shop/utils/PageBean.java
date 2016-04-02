@@ -3,7 +3,10 @@ package com.dyl.shop.utils;
 import java.util.List;
 
 /**
- * 分页类的封装
+ * 
+ * @Description: 分页类的封装
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:09:58
  */
 public class PageBean<T> {
 	private int page; // 当前页数

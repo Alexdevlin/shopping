@@ -22,9 +22,9 @@
 		<property name="code" />
 
 
-<set name="orders" cascade="delete">
-			<key column="uid"/>
-			<one-to-many class="com.dyl.shop.order.vo.Order"/>
+		<set name="orders" cascade="delete">
+			<key column="uid" />
+			<one-to-many class="com.dyl.shop.order.vo.Order" />
 		</set>
 
 	</class>

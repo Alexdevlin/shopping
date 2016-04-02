@@ -14,9 +14,10 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 /**
- * 邮件发送工具类
- * @author 传智.郭嘉
- *
+ * 
+ * @Description:邮件发送工具类 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:09:47
  */
 public class MailUitls {
 	/**

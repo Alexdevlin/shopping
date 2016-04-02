@@ -7,12 +7,11 @@ import java.util.Set;
 import com.dyl.shop.category.vo.Category;
 import com.dyl.shop.product.vo.Product;
 
-
-
 /**
- * 二级分类的实体
- * @author 传智.郭嘉
- *
+ * 
+ * @Description: 二级分类的实体
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:04:03
  */
 public class CategorySecond implements Serializable{
 	private Integer csid;

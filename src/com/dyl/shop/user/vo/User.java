@@ -7,10 +7,9 @@ import com.dyl.shop.order.vo.Order;
 
 /**
  * 
- * User实体类
- * 
- * @author duyunlei 2015-9-3 上午12:42:18
- * 
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:09:28
  */
 public class User implements java.io.Serializable {
 

@@ -15,54 +15,59 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
+/**
+ * 
+ * @Description:
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:05:07
+ */
 @Controller
 @Scope("prototype")
-public class AdminOrderAction extends ActionSupport implements
-		ModelDriven<Order> {
+public class AdminOrderAction extends ActionSupport implements ModelDriven<Order> {
 
-	private Order order = new Order();
-	@Resource
-	private OrderService orderService;
+  private Order order = new Order();
+  @Resource
+  private OrderService orderService;
 
-	private Integer page;
+  private Integer page;
 
-	public void setPage(Integer page) {
-		this.page = page;
-	}
+  public void setPage(Integer page) {
+    this.page = page;
+  }
 
-	@Override
-	public Order getModel() {
-		return order;
-	}
+  @Override
+  public Order getModel() {
+    return order;
+  }
 
-	// 查询所有带分页的订单
-	public String findAll() {
+  // 查询所有带分页的订单
+  public String findAll() {
 
-		PageBean<Order> pageBean = orderService.findAll(page);
+    PageBean<Order> pageBean = orderService.findAll(page);
 
-		ActionContext.getContext().getValueStack().set("pageBean", pageBean);
+    ActionContext.getContext().getValueStack().set("pageBean", pageBean);
 
-		return "findAll";
-	}
+    return "findAll";
+  }
 
-	// 异步刷新订单详情
-	public String findOrderItem() {
+  // 异步刷新订单详情
+  public String findOrderItem() {
 
-		List<OrderItem> list = orderService.findOrderItem(order.getOid());
+    List<OrderItem> list = orderService.findOrderItem(order.getOid());
 
-		ActionContext.getContext().getValueStack().set("list", list);
+    ActionContext.getContext().getValueStack().set("list", list);
 
-		return "findOrderItem";
+    return "findOrderItem";
 
-	}
+  }
 
-	// 后台更新订单状态
-	public String updateState() {
+  // 后台更新订单状态
+  public String updateState() {
 
-		Order currOrder = orderService.findByOid(order.getOid());
-		currOrder.setState(3);
-		orderService.update(currOrder);
-		return "updateState";
-	}
+    Order currOrder = orderService.findByOid(order.getOid());
+    currOrder.setState(3);
+    orderService.update(currOrder);
+    return "updateState";
+  }
 
 }

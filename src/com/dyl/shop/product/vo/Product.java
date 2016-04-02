@@ -5,10 +5,10 @@ import java.util.Date;
 import com.dyl.shop.categorysecond.vo.CategorySecond;
 
 /**
- * 商品的实体对象
  * 
- * @author 
- * 
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:08:05
  */
 public class Product implements java.io.Serializable{
 	private Integer pid;

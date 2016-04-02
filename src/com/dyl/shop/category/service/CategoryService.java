@@ -11,40 +11,39 @@ import org.springframework.transaction.annotation.Transactional;
 import com.dyl.shop.category.dao.CategoryDao;
 import com.dyl.shop.category.vo.Category;
 
-
+/**
+ * 
+ * @Description:
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:01:27
+ */
 @Service
 @Transactional
 public class CategoryService {
 
-	@Resource
-	private CategoryDao categoryDao;
-	
-	
-	public List<Category> findAll() {
-		return categoryDao.findAll();
-	}
+  @Resource
+  private CategoryDao categoryDao;
 
+  public List<Category> findAll() {
+    return categoryDao.findAll();
+  }
 
-	public void save(Category category) {
+  public void save(Category category) {
 
-		categoryDao.save(category);
-	}
+    categoryDao.save(category);
+  }
 
+  public Category findByCid(Integer cid) {
+    return categoryDao.findByCid(cid);
+  }
 
-	public Category findByCid(Integer cid) {
-		return categoryDao.findByCid(cid);
-	}
+  public void delete(Category category) {
 
+    categoryDao.delete(category);
+  }
 
-	public void delete(Category category) {
+  public void update(Category category) {
 
-		categoryDao.delete(category);
-	}
-
-
-	public void update(Category category) {
-
-		
-		categoryDao.update(category);
-	} 
+    categoryDao.update(category);
+  }
 }

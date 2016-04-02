@@ -3,10 +3,10 @@ package com.dyl.shop.utils;
 import java.util.UUID;
 
 /**
- * 生成UUID工具类
- * @author duyunlei
- * 2015-9-4 下午9:25:37
- *
+ * 
+ * @Description: 生成UUID工具类
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:10:33
  */
 public class UUIDUtils {
 	

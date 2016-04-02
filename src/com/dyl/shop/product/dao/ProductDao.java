@@ -10,10 +10,11 @@ import org.springframework.stereotype.Repository;
 import com.dyl.shop.product.vo.Product;
 /**
  * 
- * @author duyunlei
- * 2015-9-9 下午8:00:09
- *
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:07:45
  */
+
 @Repository
 public class ProductDao {
 

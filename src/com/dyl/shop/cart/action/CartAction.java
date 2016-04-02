@@ -13,12 +13,11 @@ import com.dyl.shop.product.service.ProductService;
 import com.dyl.shop.product.vo.Product;
 import com.opensymphony.xwork2.ActionSupport;
 /**
- * 购物车action
- * @author duyunlei
- * 2015-9-6 上午7:08:08
- *
+ * 
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午12:57:56
  */
-
 @Controller
 @Scope("prototype") 
 public class CartAction extends ActionSupport {

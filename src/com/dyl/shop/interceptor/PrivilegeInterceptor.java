@@ -7,7 +7,12 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.interceptor.MethodFilterInterceptor;
-
+/**
+ * 
+ * @Description: 
+ * @Author: duyunlei
+ * @Date: 2016年4月2日 下午1:04:50
+ */
 public class PrivilegeInterceptor extends MethodFilterInterceptor {
 
 	@Override
